@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    overflow: hidden;
+}
+
+form{
+    background-color: #209de0;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.formGroup{
+    padding: 10px;
+}
+
+input,textarea{
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buttonDiv{
+    margin: 10px auto;
+    text-align: center;
+}
+
+button{
+    color: aliceblue;
+    background-color: #209de0;
+    border: none;
+    outline-style: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: .2s linear;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: #209de0;
+    cursor: pointer;
+}
+nav{
+    background-color: #209de0;
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.bill-content{
+    display: inline-block;
+    position: absolute;
+    top: 57.33px;
+    left: 0;
+    transition: .3s linear;
+    transform: translateX(-100%);
+    min-height: 100vh;
+    width: 100%;
+    background-color: #209de0;
+    box-shadow: -2px -1px 5px 1px rgba(255,255,255,1);
+}
+
+
+
+.show{
+    transform: translateX(0);
+}
+
+.orderDetails #dateTime{
+    display: flex;
+    align-items: center;
+    
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    transition: .2s linear;
+}
+
+
+a:hover{
+    scale: 1.25;
+}
+
+.navlinks{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width:700px){
+    #showOrder{
+        display: none;
+    }
+    .navlinks li a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:699px){
+    #showOrder{
+        display: block;
+        font-size: 2rem;
+    }
+    .navlinks{
+        display: none;
+    }
+    .container{
+        font-size: 1rem;
+    }
+}
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    color: #209de0;
+    font-size: 2.5rem;
+    text-shadow: -2px 0px 3px rgba(0,0,0,1);
+}
